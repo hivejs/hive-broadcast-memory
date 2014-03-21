@@ -1,0 +1,23 @@
+{
+  "name": "hive-broadcast-memory",
+  "version": "0.0.0",
+  "description": "In-memory broadcast for hive.js",
+  "main": "broadcast.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hivejs/hive-broadcast-memory.git"
+  },
+  "keywords": [
+    "hivejs",
+    "hive.js"
+  ],
+  "author": "Marcel Klehr <mklehr@gmx.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hivejs/hive-broadcast-memory/issues"
+  },
+  "homepage": "https://github.com/hivejs/hive-broadcast-memory"
+}
