@@ -15,7 +15,7 @@ module.exports = function broadcastFactory(docId) {
 
   s._read = function() {}
 
-  s._write = function (pendingCs, callback) {
+  s._write = function (pendingCs, enc, callback) {
     this.push(pendingCs)
     callback()
   }
