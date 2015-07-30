@@ -16,7 +16,8 @@ module.exports = function broadcastFactory(docId) {
   s._read = function() {}
 
   s._write = function (pendingCs, enc, callback) {
-    this.push(pendingCs)
+    // If we push()'ed here, we'd apply the same edit twice
+    // so we don't do anything
     callback()
   }
 
