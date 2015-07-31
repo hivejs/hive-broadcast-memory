@@ -19,13 +19,9 @@ function setup(plugin, imports, register) {
         return docStreams[docId]
       }
     , sync: function(docId) {
-        if(!syncStreams[docId]) {
-          syncStreams[docId] = through(function(buf, enc, cb) {
-            this.push(buf)
-            cb()
-          })
-        }
-        return syncStreams[docId]
+        return through(function(buf, enc, cb) {
+          cb()
+        })
       }
     }
   }
