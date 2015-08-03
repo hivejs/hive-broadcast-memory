@@ -28,7 +28,7 @@ function setup(plugin, imports, register) {
 
   var Broadcast = {
     broadcast: {
-      broadcast: function(docId) {
+      document: function(docId) {
         var readBroadcast = new PassThrough
         if(!Array.isArray(broadcasts[docId])) broadcasts[docId] = []
         broadcasts[docId].push(readBroadcast)
