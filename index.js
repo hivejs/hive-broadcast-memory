@@ -34,7 +34,7 @@ function setup(plugin, imports, register) {
         broadcasts[docId].push(readBroadcast)
         var stream = duplexify(through(function(buf, enc, cb) {
           if(Array.isArray(broadcasts[docId])) {
-            broacasts[docId].forEach(function(s) {
+            broadcasts[docId].forEach(function(s) {
               if(s === readBroadcast) return
               s.write(buf)
             })
